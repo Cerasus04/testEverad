@@ -1,0 +1,53 @@
+.header {
+  background-color: $french-blue;
+}
+.header__nav {}
+
+.header__logo {}
+
+.header__toggle {
+  width: 40px;
+  padding: 10px;
+}
+
+.header__toggle-mobile {
+  & svg {
+      fill: $white;
+
+
+      &:hover,
+      &:focus {
+        fill: $french-blue;
+        opacity: 0.1;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+  }
+}
+
+.header__toggle-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header__toggle {
+    width: 230px;
+    padding: 19px 30px;
+  }
+
+  .header__toggle-mobile {
+    display: none;
+  }
+  .header__toggle-text {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__togle {
+    padding: 15px 34px 16px 24px;
+    width: 225px;
+  }
+}

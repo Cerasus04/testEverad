@@ -1,0 +1,50 @@
+.offers {
+
+}
+
+.offers__title {
+  color: $cherry;
+
+}
+.offers__text {
+  font-weight: 700;
+  &--sinset {
+
+  }
+  &--skarbet {
+
+  }
+}
+.offers__img {
+
+}
+@media (min-width: $tablet-width) {
+  .offers {}
+
+  .offers__title {}
+
+  .offers__text {
+    &--sinset {}
+
+    &--skarbet {}
+  }
+
+  .offers__img {}
+}
+
+@media (min-width: $desktop-width) {
+  .offers {}
+
+  .offers__title {
+    font-size: 17px;
+  }
+
+  .offers__text {
+    font-size: 18px;
+    &--sinset {}
+
+    &--skarbet {}
+  }
+
+  .offers__img {}
+}

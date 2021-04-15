@@ -1,0 +1,48 @@
+//Colors
+
+$reversed-gray: #080808; //text-color
+$french-blue: #0072bc; //header-color
+$light-blue: #6dcff6; //slider-color
+$white: #ffffff;
+$cherry: #8e0000; //title-text
+$carbon: #333333; //card-text
+$silver: #acacac;
+$orange: #f26522;
+$light-beige: #fdfafa;
+
+//text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+
+//Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width: 320px;
+
+
+//Mixin
+
+@mixin ul-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin title-mobile {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+@mixin title-tablet {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+
+@mixin title-desktop {
+  font-size: 34px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 1.1px;
+}

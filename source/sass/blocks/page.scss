@@ -1,0 +1,52 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 290px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $carbon;
+}
+
+.page__container {
+  min-width: 290px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.page__header {
+
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__footer {
+  flex-shrink: 0;
+}
+
+@media(min-width: $tablet-width) {
+  .page {
+    font-size: 16px;
+  }
+  .page__container {
+    min-width: $tablet-width;
+    width: calc(100% - 100px);
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page {
+    font-size: 14px;
+  }
+  .page__container {
+    min-width: $desktop-width;
+    width: calc(100% - 10px);
+  }
+}

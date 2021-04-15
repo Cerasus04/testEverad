@@ -1,0 +1,34 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  // width: 230px;
+  // padding: 19px 30px;
+  line-height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $light-beige;
+  background-color: $orange;
+
+  &:hover,
+  &:focus {
+    color: $silver;
+  }
+
+  &:active {
+    background-color: $cherry;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 21px;
+    // padding: 15px 34px 16px 24px;
+    // width: 225px;
+  }
+}
