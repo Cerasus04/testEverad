@@ -1,8 +1,6 @@
 .button {
   display: block;
   box-sizing: border-box;
-  // width: 230px;
-  // padding: 19px 30px;
   line-height: 24px;
   font-family: inherit;
   font-size: 18px;
@@ -28,7 +26,5 @@
 @media (min-width: $desktop-width) {
   .button {
     font-size: 21px;
-    // padding: 15px 34px 16px 24px;
-    // width: 225px;
   }
 }

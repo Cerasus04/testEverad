@@ -71,13 +71,14 @@
     letter-spacing: -1px;
   }
 
-  .promo__wrapper {}
+  .promo__wrapper {
+    display: flex;
+  }
 
-  .promo__list {}
-
-  .promo-list {}
-
-  .promo-list__item {}
+  .promo__list {
+    display: flex;
+  }
 
   .promo__offers {}
 }
+
