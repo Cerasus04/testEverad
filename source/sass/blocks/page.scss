@@ -19,9 +19,7 @@
 }
 
 .page__header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 8px 10px 15px;
+
 }
 
 .page__main {
@@ -43,11 +41,11 @@
 
 @media(min-width: $desktop-width) {
   .page {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .page__header {
-     padding: 10px 8px 10px 15px;
+
   }
   .page__container {
     width: 1190px;

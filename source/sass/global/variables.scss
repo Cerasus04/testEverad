@@ -9,6 +9,8 @@ $carbon: #333333; //card-text
 $silver: #acacac;
 $orange: #f26522;
 $light-beige: #fdfafa;
+$green: #06811a;
+$grey: #444444;
 
 //Viewports
 
@@ -38,8 +40,8 @@ $mobile-width: 320px;
 }
 
 @mixin title-desktop {
-  font-size: 34px;
-  line-height: 53px;
+  font-size: 38px;
+  line-height: 59px;
   text-align: center;
   letter-spacing: 1.1px;
 }

@@ -26,15 +26,17 @@
                 alt="Логотип Суши-шмастер">
             </picture>
           </a>
-          <a class="header__toggle button" href="#">
-            <span class="header__toggle-text">
-              Сделать заказ</span>
-            <span class="header__toggle-mobile">
-              <svg width="20" height="19">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
-              </svg>
-            </span>
-          </a>
+          <div class="header__wrap">
+            <a class="header__toggle button" href="#">
+              <span class="header__toggle-text">
+                Сделать заказ</span>
+              <span class="header__toggle-mobile">
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </span>
+            </a></div>
+
         </nav>
       </div>
     </header>
@@ -69,7 +71,8 @@
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
                   </p>
                   <a class="product-card__btn btn-js" href="#" aria-label="Добавить к заказу">
-                    Заказать
+                    <span class="product-card__btn-available product-card__btn-available--yes">Заказать
+                    </span>
                   </a>
                 </div>
               </li>
@@ -91,8 +94,10 @@
                   <p class="product-card__text">
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
                   </p>
-                  <a class="product-card__btn btn-js" href="#" aria-label="Добавить к заказу">
-                    Недоступно к заказу
+                  <a class="product-card__btn btn-js" aria-label="Добавить к заказу">
+                    <span class="product-card__btn-available product-card__btn-available--no">Недоступно к
+                      заказу</span>
+
                   </a>
                 </div>
               </li>
@@ -114,8 +119,9 @@
                   <p class="product-card__text">
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
                   </p>
-                  <a class="product-card__btn btn-js" href="#" aria-label="Добавить к заказу">
-                    Недоступно к заказу
+                  <a class="product-card__btn btn-js" aria-label="Добавить к заказу">
+                    <span class="product-card__btn-available product-card__btn-available--no">Недоступно к
+                      заказу</span>
                   </a>
                 </div>
               </li>
@@ -130,7 +136,8 @@
                 <img class="offers__img" srcset="img/synergistic-mobile@1x.webp 1x, img/synergistic-mobile@2x.webp 2x"
                   alt="Сет Синергетический">
               </picture>
-              <h3 class="offers__title">А для абитуриентов у нас есть масса комплиментов!</h3>
+              <h3 class="offers__title">А для абитуриентов
+                <br> у нас есть масса комплиментов!</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/skarbovskiy-desktop@1x.webp 1x, img/skarbovskiy-desktop@2x.webp 2x">

@@ -4,6 +4,7 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {}
@@ -35,11 +36,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: center;
+  }
   .header__toggle {
     width: 230px;
     padding: 19px 30px;
+    margin-left: 25px;
   }
-
   .header__toggle-mobile {
     display: none;
   }
@@ -49,8 +56,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header__togle {
-    padding: 15px 34px 16px 24px;
-    width: 225px;
+  .header__wrap {
+    width: 800px;
+  }
+  .header__toggle {
+    padding: 15px 34px 22px 31px;
+    width: 250px;
+  }
+  .header__nav {
+    padding: 10px 8px 0 15px;
   }
 }
