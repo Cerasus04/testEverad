@@ -1,0 +1,23 @@
+.controls {
+  @include ul-reset;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.controls__btn {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background-color: $white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .controls__btn {
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -10,13 +10,26 @@
 }
 .carousel__inner {
   position: relative;
-  width: 900px;
+  width: 290px;
+  margin: 0 auto;
+}
+
+.carousel__button-list {
+  width: 150px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .carousel__title {
     @include title-tablet;
+  }
+
+  .carousel__inner {
+    width: 668px;
+  }
+
+  .carousel__button-list {
+    width: 216px;
   }
 }
 
@@ -26,6 +39,9 @@
     padding: 63px 50px 50px;
   }
 
-  .carousel__inner {}
+  .carousel__inner {
+    width: 900px;
+    padding-bottom: 50px;
+  }
 
 }
