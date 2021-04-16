@@ -2,6 +2,8 @@
 
 .promo__title {
   @include title-mobile;
+   margin: 0;
+   padding: 0 20px 30px;
 }
 
 .promo__text {
@@ -20,7 +22,7 @@
 .promo__wrapper {}
 
 .promo__list {
-  width: 800px;
+  width: 290px;
 }
 
 .promo-list__item {}
@@ -36,20 +38,23 @@
 
   .promo__text {
     // width: 500px;
-    font-size: 20px;
+    font-size: 23px;
   }
 
-  .promo__subtitle {}
+  .promo__subtitle {
+    font-size: 30px;
+  }
 
   .promo__wrapper {}
 
-  .promo__list {}
+  .promo__list {
+    width: 668px;
+  }
 
-  .promo-list {}
-
-  .promo-list__item {}
-
-  .promo__offers {}
+  .promo__offers {
+    position: relative;
+    display: flex;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -57,7 +62,6 @@
 
   .promo__title {
     @include title-desktop;
-    margin: 0;
     padding: 0 50px 43px;
   }
 
@@ -84,6 +88,7 @@
     width: 810px;
   }
   .promo__offers {
+    display: block;
     width: 370px;
     margin-left: 10px;
   }

@@ -3,10 +3,16 @@
 }
 .carousel__title {
   @include title-mobile;
+  margin: 0;
+  padding: 30px;
   color: $white;
   text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
-.carousel__inner {}
+.carousel__inner {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
 
 @media (min-width: $tablet-width) {
   .carousel__title {
@@ -15,12 +21,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .carousel {
-    background-color: $light-blue;
-  }
-
   .carousel__title {
     @include title-desktop;
+    padding: 63px 50px 50px;
   }
 
   .carousel__inner {}
