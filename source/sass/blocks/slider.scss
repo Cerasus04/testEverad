@@ -1,12 +1,25 @@
 .slider {
+  // &:before {
+  //   content: "";
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //     left: -66px;
+  //     width: 30px;
+  //     height: 60px;
+  //     border: none;
+  //     background-image: url("../img/slick-next.svg");
 
-}
+  //   }
 
-.slider__item {
-   display: none;
-
-  &--current {
-    display: block;
   }
-}
+
+
+// .slider__item {
+//    display: none;
+
+//   &--current {
+//     display: block;
+//   }
+// }
 

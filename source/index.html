@@ -22,8 +22,8 @@
                 srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/logo-tablet@1x.webp 1x, img/logo-tablet@2x.webp 2x">
-              <img class="product-card__image-icon" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x"
-                alt="Логотип Суши-шмастер">
+              <source type="image/webp" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+              <img class="product-card__image-icon" src="img/logo-mobile@1x.webp" alt="Логотип Суши-шмастер">
             </picture>
           </a>
           <div class="header__wrap">
@@ -35,8 +35,8 @@
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
               </span>
-            </a></div>
-
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -48,7 +48,8 @@
             <br> Порадуй себя и своих родных и близких
           </h2>
           <p class="promo__text">Ниже представлены наши самые популярные позиции
-            за последние полгода работы на карантине</p>
+            за последние полгода работы на карантине
+          </p>
           <h3 class="promo__subtitle">Актуальные позиции</h3>
           <div class="promo__wrapper">
             <ul class="promo__list product-card">
@@ -59,13 +60,14 @@
                       srcset="img/grenoble-desktop@1x.webp 1x, img/grenoble-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/grenoble-tablet@1x.webp 1x, img/grenoble-tablet@2x.webp 2x">
-                    <img class="product-card__image-icon"
-                      srcset="img/grenoble-mobile@1x.webp 1x, img/grenoble-mobile@2x.webp 2x" alt="Ролл Гринобль">
+                    <source type="image/webp" srcset="img/grenoble-mobile@1x.webp 1x, img/grenoble-mobile@2x.webp 2x">
+                    <img class="product-card__image-icon" src="img/grenoble-mobile@1x.webp" alt="Ролл Гринобль">
                   </picture>
                 </a>
                 <div class="product-card__description">
                   <h3 class="product-card__title">
-                    <a href="#" class="product-card__link">Гринобль ролл</a>
+                    <a href="#" class="product-card__link">Гринобль ролл
+                    </a>
                   </h3>
                   <p class="product-card__text">
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
@@ -83,13 +85,14 @@
                       srcset="img/orangeade-desktop@1x.webp 1x, img/orangeade-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/orangeade-tablet@1x.webp 1x, img/orangeade-tablet@2x.webp 2x">
-                    <img class="product-card__image-icon"
-                      srcset="img/orangeade-mobile@1x.webp 1x, img/orangeade-mobile@2x.webp 2x" alt="Ролл Оранжад">
+                    <source type="image/webp" srcset="img/orangeade-mobile@1x.webp 1x, img/orangeade-mobile@2x.webp 2x">
+                    <img class="product-card__image-icon" src="img/orangeade-mobile@1x.webp" alt="Ролл Оранжад">
                   </picture>
                 </a>
                 <div class="product-card__description">
                   <h3 class="product-card__title">
-                    <a href="#" class="product-card__link">Оранжад ролл</a>
+                    <a href="#" class="product-card__link">Оранжад ролл
+                    </a>
                   </h3>
                   <p class="product-card__text">
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
@@ -97,7 +100,6 @@
                   <a class="product-card__btn btn-js" aria-label="Добавить к заказу">
                     <span class="product-card__btn-available product-card__btn-available--no">Недоступно к
                       заказу</span>
-
                   </a>
                 </div>
               </li>
@@ -108,20 +110,22 @@
                       srcset="img/brownie-desktop@1x.webp 1x, img/brownie-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/brownie-tablet@1x.webp 1x, img/brownie-tablet@2x.webp 2x">
-                    <img class="product-card__image-icon"
-                      srcset="img/brownie-mobile@1x.webp 1x, img/brownie-mobile@2x.webp 2x" alt="Ролл Брауни">
+                    <source type="image/webp" srcset="img/brownie-mobile@1x.webp 1x, img/brownie-mobile@2x.webp 2x">
+                    <img class="product-card__image-icon" src="img/brownie-mobile@1x.webp" alt="Ролл Брауни">
                   </picture>
                 </a>
                 <div class="product-card__description">
                   <h3 class="product-card__title">
-                    <a href="#" class="product-card__link">Брауни ролл</a>
+                    <a href="#" class="product-card__link">Брауни ролл
+                    </a>
                   </h3>
                   <p class="product-card__text">
                     Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш глаз, Получи скорей экстаз!
                   </p>
                   <a class="product-card__btn btn-js" aria-label="Добавить к заказу">
                     <span class="product-card__btn-available product-card__btn-available--no">Недоступно к
-                      заказу</span>
+                      заказу
+                    </span>
                   </a>
                 </div>
               </li>
@@ -134,8 +138,9 @@
                     srcset="img/synergistic-desktop@1x.webp 1x, img/synergistic-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/synergistic-tablet@1x.webp 1x, img/synergistic-tablet@2x.webp 2x">
-                  <img class="offers__img" srcset="img/synergistic-mobile@1x.webp 1x, img/synergistic-mobile@2x.webp 2x"
-                    alt="Сет Синергетический">
+                  <source type="image/webp"
+                    srcset="img/synergistic-mobile@1x.webp 1x, img/synergistic-mobile@2x.webp 2x">
+                  <img class="offers__img" src="img/synergistic-mobile@1x.webp" alt="Сет Синергетический">
                 </picture>
               </div>
               <h3 class="offers__title">А для абитуриентов
@@ -146,10 +151,12 @@
                     srcset="img/skarbovskiy-desktop@1x.webp 1x, img/skarbovskiy-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/skarbovskiy-tablet@1x.webp 1x, img/skarbovskiy-tablet@2x.webp 2x">
-                  <img class="offers__img" srcset="img/skarbovskiy-mobile@1x.webp 1x, img/skarbovskiy-mobile@2x.webp 2x"
-                    alt="Сет Скарбовский">
+                  <source type="image/webp"
+                    srcset="img/skarbovskiy-mobile@1x.webp 1x, img/skarbovskiy-mobile@2x.webp 2x">
+                  <img class="offers__img" src="img/skarbovskiy-mobile@1x.webp" alt="Сет Скарбовский">
                 </picture>
-                <p class="offers__text offers__text--skarbset">Скарбовский сет</p>
+                <p class="offers__text offers__text--skarbset">Скарбовский сет
+                </p>
               </div>
             </div>
           </div>
@@ -159,13 +166,14 @@
         <div class="page__container">
           <h2 class="carousel__title">Самые выгодные предложения:</h2>
           <div class="carousel__inner slider">
-            <div class="slider__item slider__item--current">
+            <div class="slider__item">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/slide1-desktop@1x.webp 1x, img/slide1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/slide1-tablet@1x.webp 1x, img/slide1-tablet@2x.webp 2x">
-                <img srcset="img/slide1-mobile@1x.webp 1x, img/slide1-mobile@2x.webp 2x" alt="Спецпредложение">
+                <source type="image/webp" srcset="img/slide1-mobile@1x.webp 1x, img/slide1-mobile@2x.webp 2x">
+                <img src="img/slide1-mobile@1x.webp" alt="Спецпредложение">
               </picture>
             </div>
             <div class="slider__item">
@@ -174,7 +182,8 @@
                   srcset="img/slide2-desktop@1x.webp 1x, img/slide2-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/slide2-tablet@1x.webp 1x, img/slide2-tablet@2x.webp 2x">
-                <img srcset="img/slide2-mobile@1x.webp 1x, img/slide2-mobile@2x.webp 2x" alt="Спецпредложение">
+                <source type="image/webp" srcset="img/slide2-mobile@1x.webp 1x, img/slide2-mobile@2x.webp 2x">
+                <img src="img/slide2-mobile@1x.webp" alt="Спецпредложение">
               </picture>
             </div>
             <div class="slider__item">
@@ -183,21 +192,29 @@
                   srcset="img/slide3-desktop@1x.webp 1x, img/slide3-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/slide3-tablet@1x.webp 1x, img/slide3-tablet@2x.webp 2x">
-                <img srcset="img/slide3-mobile@1x.webp 1x, img/slide3-mobile@2x.webp 2x" alt="Спецпредложение">
+                <source srcset="img/slide3-mobile@1x.webp 1x, img/slide3-mobile@2x.webp 2x">
+                <img src="img/slide3-mobile@1x.webp" alt="Спецпредложение">
               </picture>
             </div>
           </div>
-          <ul class="carousel__button-list controls">
-            <li class="controls__item">
-              <button id="1" class="controls__btn current" type="button" aria-label="Первый слайд"></button>
-            </li>
-            <li class="controls__item">
-              <button id="2" class="controls__btn" type="button" aria-label="Второй слайд"></button>
-            </li>
-            <li class="controls__item">
-              <button id="3" class="controls__btn" type="button" aria-label="Третий слайд слайд"></button>
-            </li>
-          </ul>
+          <div class="carousel__toggle">
+            <ul class="carousel__button-list controls">
+              <li class="controls__item">
+                <button class="controls__btn current" type="button" aria-label="Первый слайд"
+                  onclick="currentSlide(1)"></button>
+              </li>
+              <li class="controls__item">
+                <button class="controls__btn" type="button" aria-label="Второй слайд"
+                  onclick="currentSlide(2)"></button>
+              </li>
+              <li class="controls__item">
+                <button class="controls__btn" type="button" aria-label="Третий слайд слайд"
+                  onclick="currentSlide(3)"></button>
+              </li>
+            </ul>
+            <img class="carousel__arrow carousel__arrow--left" src="img/slick-prev.webp" alt="Листать слайдер влево">
+            <img class="carousel__arrow carousel__arrow--right" src="img/slick-next.webp" alt="Листать слайдер вправо">
+          </div>
         </div>
       </section>
     </main>

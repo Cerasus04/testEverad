@@ -1,5 +1,6 @@
 .carousel {
   background-color: $light-blue;
+
 }
 .carousel__title {
   @include title-mobile;
@@ -9,7 +10,6 @@
   text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 .carousel__inner {
-  position: relative;
   width: 290px;
   margin: 0 auto;
 }
@@ -17,6 +17,9 @@
 .carousel__button-list {
   width: 150px;
   margin: 0 auto;
+}
+.carousel__arrow {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,8 +43,26 @@
   }
 
   .carousel__inner {
+    position: relative;
     width: 900px;
     padding-bottom: 50px;
   }
 
+  .carousel__toggle {
+    position: relative;
+  }
+  .carousel__arrow {
+    display: block;
+    position: absolute;
+
+    &--left {
+      top: 0;
+      left: 35%;
+    }
+
+    &--right {
+      top: 0;
+      right: 35%;
+    }
+  }
 }

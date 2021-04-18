@@ -1,26 +1,44 @@
-// Переменные для оживления слайдов
+var i;
+var slides = document.querySelectorAll(".slider__item");
+var dots = document.querySelectorAll(".controls__btn");
+var buttonsLeft = document.querySelector(".carousel__arrow--left");
+var buttonsRight = document.querySelector(".carousel__arrow--right");
+/* Индекс слайда по умолчанию */
+var slideIndex = 1;
+showSlides(slideIndex);
 
-const slides = document.querySelectorAll(".controls__btn");
-const slideDescriptions = document.querySelectorAll(".slider__item");
-const slideButtons = document.querySelectorAll(".controls__btn");
-// const wrapper = document.querySelector(".site-wrapper");
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
 
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function prevSlide() {
+    showSlides(slideIndex -= 1);
+}
 
-// Скрипт для оживления слайдов
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-slides.forEach(function(slide) {
-  slide.addEventListener("click", function(evt) {
-  	evt.preventDefault();
-    // wrapper.className = "site-wrapper-" + evt.target.id;
+/* Основная функция слайдера */
+function showSlides(n) {
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" current", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " current";
+}
 
-    slideButtons.forEach(function(item) {
-      item.classList.remove("current");
-    })
-    evt.target.classList.add("current");
-
-    slideDescriptions.forEach(function(item) {
-      item.classList.remove("slider__item--current");
-    })
-    slideDescriptions[evt.target.id - 1].classList.add("slider__item--current");
-  })
-});
+buttonsLeft.addEventListener("click", prevSlide);
+buttonsRight.addEventListener("click", nextSlide);
