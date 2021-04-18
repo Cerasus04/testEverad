@@ -1,6 +1,6 @@
-var i;
-var slides = document.querySelectorAll(".slider__item");
-var dots = document.querySelectorAll(".controls__btn");
+// var i;
+// var slides = document.querySelectorAll(".slider__item");
+// var dots = document.querySelectorAll(".controls__btn");
 var buttonsLeft = document.querySelector(".carousel__arrow--left");
 var buttonsRight = document.querySelector(".carousel__arrow--right");
 /* Индекс слайда по умолчанию */
@@ -24,6 +24,10 @@ function currentSlide(n) {
 
 /* Основная функция слайдера */
 function showSlides(n) {
+  var i;
+  var slides = document.querySelectorAll(".carousel__item");
+  var dots = document.querySelectorAll(".controls__btn");
+
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -45,7 +49,7 @@ buttonsRight.addEventListener("click", nextSlide);
 
 // Открытие модального окна
 
-var salesBtn = document.querySelectorAll(".btn-js"); //одно моальное окно на любую кнопку сделать заказ
+var salesBtn = document.querySelectorAll(".btn-js"); //одно моальное окно на любую кнопку "сделать заказ"
 var closedBtn = document.querySelectorAll(".choice__close");
 var modalOverlay = document.querySelector(".modal-overlay");
 var modalBlock = document.querySelector(".modal-block");
