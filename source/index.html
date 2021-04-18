@@ -27,7 +27,7 @@
             </picture>
           </a>
           <div class="header__wrap">
-            <a class="header__toggle button" href="#">
+            <a class="header__toggle button btn-js" href="#">
               <span class="header__toggle-text">
                 Сделать заказ</span>
               <span class="header__toggle-mobile">
@@ -165,8 +165,8 @@
       <section class="main__slider carousel">
         <div class="page__container">
           <h2 class="carousel__title">Самые выгодные предложения:</h2>
-          <div class="carousel__inner slider">
-            <div class="slider__item">
+          <div class="carousel__inner">
+            <div class="carousel__item">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/slide1-desktop@1x.webp 1x, img/slide1-desktop@2x.webp 2x">
@@ -176,7 +176,7 @@
                 <img src="img/slide1-mobile@1x.webp" alt="Спецпредложение">
               </picture>
             </div>
-            <div class="slider__item">
+            <div class="carousel__item">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/slide2-desktop@1x.webp 1x, img/slide2-desktop@2x.webp 2x">
@@ -186,7 +186,7 @@
                 <img src="img/slide2-mobile@1x.webp" alt="Спецпредложение">
               </picture>
             </div>
-            <div class="slider__item">
+            <div class="carousel__item">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/slide3-desktop@1x.webp 1x, img/slide3-desktop@2x.webp 2x">
@@ -223,6 +223,18 @@
         <p class="footer__copyright">Copyright 2021</p>
       </div>
     </footer>
+
+    <div class="modal-overlay"></div>
+    <div class="modal-block">
+      <form class="modal-block__form choice" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="choice__form-title">Подтвердите заказ</h2>
+        <div class="choice__close">&times;</div>
+        <p class="choice__form-text">Гринобль ролл</p>
+        <input class="choice__item" type="checkbox" id="checked" name="checked" value="yes">
+        <label class="choice__item-label" for="checked">Беру</label>
+        <button class="button choice__btn button--green" type="submit">Добавить</button>
+      </form>
+    </div>
     <script src="js/script.js"></script>
   </body>
 

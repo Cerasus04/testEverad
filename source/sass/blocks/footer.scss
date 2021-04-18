@@ -1,17 +1,11 @@
-.footer {}
-
 .footer__copyright {
-  font-size: 14px;
-  font-weight: 700;
   padding: 0 20px;
   text-align: center;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-@media (min-width: $tablet-width) {}
-
 @media (min-width: $desktop-width) {
-  .footer {}
-
   .footer__copyright {
     font-size: 22px;
   }

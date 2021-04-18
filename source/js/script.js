@@ -42,3 +42,50 @@ function showSlides(n) {
 
 buttonsLeft.addEventListener("click", prevSlide);
 buttonsRight.addEventListener("click", nextSlide);
+
+// Открытие модального окна
+
+var salesBtn = document.querySelectorAll(".btn-js"); //одно моальное окно на любую кнопку сделать заказ
+var closedBtn = document.querySelectorAll(".choice__close");
+var modalOverlay = document.querySelector(".modal-overlay");
+var modalBlock = document.querySelector(".modal-block");
+var modalForm = document.querySelector(".modal-block__form");
+
+function show() {
+  modalOverlay.classList.add("modal-overlay--opened");
+  modalBlock.classList.add("modal-block--opened");
+}
+
+function hide() {
+  if (modalOverlay.classList.contains("modal-overlay--opened")
+    && modalBlock.classList.contains("modal-block--opened")) {
+    modalOverlay.classList.remove("modal-overlay--opened");
+    modalBlock.classList.remove("modal-block--opened");
+  }
+}
+
+for (let i = 0; i < salesBtn.length; i++) {
+  salesBtn[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    show();
+  });
+}
+
+window.addEventListener("keydown", function () {
+  if (event.keyCode === 27) {
+    hide();
+  }
+});
+
+for (let i = 0; i < closedBtn.length; i++) {
+  closedBtn[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    hide();
+  });
+}
+
+modalOverlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  hide();
+});
+

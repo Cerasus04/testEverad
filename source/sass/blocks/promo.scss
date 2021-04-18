@@ -1,5 +1,3 @@
-.promo {}
-
 .promo__title {
   @include title-mobile;
    margin: 0;
@@ -19,33 +17,21 @@
   color: $reversed-gray;
 }
 
-.promo__wrapper {}
-
 .promo__list {
   width: 290px;
 }
 
-.promo-list__item {}
-
-.promo__offers {}
-
 @media (min-width: $tablet-width) {
-  .promo {}
-
   .promo__title {
     @include title-tablet;
   }
-
   .promo__text {
-    // width: 500px;
     font-size: 23px;
   }
 
   .promo__subtitle {
     font-size: 30px;
   }
-
-  .promo__wrapper {}
 
   .promo__list {
     width: 668px;
@@ -58,8 +44,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo {}
-
   .promo__title {
     @include title-desktop;
     padding: 0 50px 43px;
